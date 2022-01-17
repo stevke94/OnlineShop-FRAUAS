@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probe.RegisterController">
+   <top>
+      <AnchorPane prefHeight="99.0" prefWidth="1006.0" style="-fx-background-color: #fefefe;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="259.0" prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #333a4a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="menu_registration" layoutX="14.0" layoutY="68.0" prefHeight="23.0" prefWidth="73.0" text="MENU">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../target/classes/com/example/probe/Images/hamburger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="menu_back_registration" layoutX="14.0" layoutY="68.0" prefHeight="23.0" prefWidth="73.0" text="MENU" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="935.0" AnchorPane.topAnchor="68.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/hamburger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <HBox alignment="CENTER" layoutX="171.0" layoutY="46.0" prefHeight="53.0" prefWidth="851.0" spacing="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+               <children>
+                  <JFXButton onAction="#homePage" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #546dae;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/home-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#monitorsPage" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #546dae;" text="Monitors" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/monitor.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#laptopsPage" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #546dae;" text="Laptops" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/laptop.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="slider_registration" prefHeight="669.0" prefWidth="171.0" style="-fx-background-color: #dedae3;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="72.0" prefHeight="621.0" prefWidth="171.0" spacing="40.0" style="-fx-background-color: #dedae3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton onAction="#homePage" prefHeight="63.0" prefWidth="179.0" style="-fx-background-color: #546dae;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/home-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#loginPage" prefHeight="63.0" prefWidth="179.0" style="-fx-background-color: #546dae;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/login.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="597.0" prefWidth="809.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="80.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="723.5598907470703" AnchorPane.topAnchor="198.6302089691162" />
+            <Text layoutX="80.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="723.3932304382324" AnchorPane.topAnchor="259.6302089691162" />
+            <TextField layoutX="193.0" layoutY="184.0" prefHeight="30.0" prefWidth="460.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="192.0" AnchorPane.topAnchor="184.0" />
+            <TextField layoutX="193.0" layoutY="245.0" prefHeight="30.0" prefWidth="460.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="192.0" AnchorPane.topAnchor="245.0" />
+            <Text layoutX="86.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customer?" wrappingWidth="168.78759765625" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="38.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="86.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please create your account" wrappingWidth="279.7851867675781" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="485.2148132324219" AnchorPane.topAnchor="104.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <TextField layoutX="193.0" layoutY="310.0" prefHeight="30.0" prefWidth="460.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="192.0" AnchorPane.topAnchor="310.0" />
+            <Text layoutX="80.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="721.39453125" AnchorPane.topAnchor="324.0" />
+            <Text layoutX="92.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="748.791015625" AnchorPane.topAnchor="378.0" />
+            <TextField layoutX="191.0" layoutY="371.0" prefHeight="30.0" prefWidth="460.0" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="371.0" />
+            <Text layoutX="88.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="744.67578125" AnchorPane.topAnchor="435.05078125" />
+            <TextField layoutX="190.0" layoutY="429.0" prefHeight="30.0" prefWidth="490.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="187.0" AnchorPane.topAnchor="429.0" />
+            <JFXButton layoutX="255.0" layoutY="564.0" prefHeight="30.0" prefWidth="124.0" text="Confirm" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="484.0" AnchorPane.topAnchor="564.0" />
+            <JFXButton layoutX="464.0" layoutY="564.0" prefHeight="30.0" prefWidth="124.0" text="Clear" AnchorPane.leftAnchor="464.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="564.0" />
+            <TextField layoutX="190.0" layoutY="484.0" prefHeight="30.0" prefWidth="485.0" />
+            <Text layoutX="79.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
